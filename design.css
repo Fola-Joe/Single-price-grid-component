@@ -156,8 +156,8 @@ p {
     color: white;
     border: none;
     border-radius: 5px;
+    box-shadow: 0 10px 20px hsl(179, 77%, 30%);
 }
-
 .btn:hover {
     cursor: pointer;
 }
@@ -166,7 +166,47 @@ p {
     color: white;
     opacity: 0.7;
 }
-
 .list-1 {
     padding-top: 0.4rem;
+}
+
+@media screen and (min-width: 960px){
+    body {
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 680px;
+        border-radius: 10px;
+    }
+
+    .part-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .article-1 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 2.5rem;
+    }
+    .article-2 {
+        border-bottom-left-radius: 10px;
+        padding: 2.5rem;
+    }
+    .article-3 {
+        border-radius: 0 0 10px 0;
+        padding: 2.5rem;
+    }
+
+    .line-1 {
+        font-size: 1.6rem;
+    }
+    .line-2 {
+        font-size: 1.2rem;
+        padding-bottom: 0.8rem;
+    }
+    .line-3 {
+        font-size: 1.07rem;
+    }
 }
